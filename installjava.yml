@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: i want to install java on ubuntu
+    apt:
+       name: openjdk-8-jdk
+       state: present
+  - name: i want to install tree
+    apt:
+       name: tree
+       state: present
